@@ -125,8 +125,8 @@ for (var i = 0; i < array.length; i++) {
 
 /* ex.14*/
 function titleFunction() {
-    let t = (Number(document.getElementById('titlu').innerText))^2;
-    return t;
+    let t = Math.pow(Number(document.getElementById('titlu').innerText),2);
+    return t
 }
-document.getElementById('titlu').setAttribute('title', myFunction());
+document.getElementById('titlu').setAttribute('title', titleFunction());
 
